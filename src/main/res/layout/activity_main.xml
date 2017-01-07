@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.9"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/main_text_view_response"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="visible"
+            android:layout_weight="0.15"></TextView>
+
+        <EditText
+            android:id="@+id/main_edit_text_command"
+            android:inputType="textMultiLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1">
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/main_button_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Control"
+                android:visibility="invisible"></Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slot:"
+                android:textSize="20dp"
+                android:visibility="invisible"></TextView>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/main_spinner_slot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"></Spinner>
+                <Button
+                    android:id="@+id/main_button_get_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get State"
+                    android:visibility="invisible"></Button>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Power Action:"
+                android:textSize="20dp"
+                android:visibility="invisible"></TextView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/main_spinner_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"></Spinner>
+                <Button
+                    android:id="@+id/main_button_power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Power"
+                    android:visibility="invisible"></Button>
+                <Button
+                    android:id="@+id/main_button_get_atr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get ATR"
+                    android:visibility="invisible"></Button>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Protocol:"
+                android:textSize="20dp"
+                android:visibility="invisible"></TextView>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/main_check_box_t0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T=0"
+                    android:visibility="invisible"></CheckBox>
+                <CheckBox
+                    android:id="@+id/main_check_box_t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T=1"
+                    android:visibility="invisible"></CheckBox>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/main_button_set_protocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Protocol"
+                    android:visibility="invisible"></Button>
+                <Button
+                    android:id="@+id/main_button_get_protocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get Protocol"
+                    android:visibility="invisible"></Button>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transmit / Control:"
+                android:textSize="20dp"
+                android:visibility="invisible"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reader:"
+                android:textSize="20dp"></TextView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/main_button_list"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:text="List"></Button>
+
+                <Spinner
+                    android:id="@+id/main_spinner_reader"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content"></Spinner>
+
+                <Button
+                    android:id="@+id/main_button_transmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transmit"
+                    android:visibility="invisible"></Button>
+
+                <EditText
+                    android:id="@+id/main_edit_text_control"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:visibility="invisible"></EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secure PIN Entry:"
+                android:textSize="20dp"
+                android:visibility="invisible"></TextView>
+
+            <Button
+                android:id="@+id/main_button_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Close"></Button>
+
+            <Button
+                android:id="@+id/main_button_open"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Open"></Button>
+
+            <Button
+                android:id="@+id/main_button_get_features"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Features"
+                android:visibility="invisible"></Button>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/main_button_verify_pin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verify PIN"
+                    android:visibility="invisible"></Button>
+
+                <Button
+                    android:id="@+id/main_button_modify_pin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modify PIN"
+                    android:visibility="invisible"></Button>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACR83 / APG8201:"
+                android:textSize="20dp"
+                android:visibility="invisible"></TextView>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/main_button_read_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Read Key"></Button>
+                <Button
+                    android:id="@+id/main_button_display_lcd_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Display LCD Message"></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
